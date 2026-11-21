@@ -1,0 +1,54 @@
+{
+  "name": "dsh-turn-beacon",
+  "version": "1.0.0",
+  "description": "Audio-reactive turn rail for DeepSeek Harness: the conversation's turn ticks ripple with real system-audio spectrum analysis, ripple under the pointer like water, and keep a longer, gradient-marked tick on saved turns.",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "audio-visualizer",
+    "spectrum",
+    "turn-rail",
+    "bookmark"
+  ],
+  "license": "MIT",
+  "author": "s17765152890-gif",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s17765152890-gif/dsh-turn-beacon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/s17765152890-gif/dsh-turn-beacon/issues"
+  },
+  "homepage": "https://github.com/s17765152890-gif/dsh-turn-beacon#readme",
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

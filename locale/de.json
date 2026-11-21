@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Turn Beacon",
+    "description": "Turns the built-in turn rail into a water surface that moves with the music, and puts the bookmark control on the rail itself, where Codex keeps it. The motion is driven by real audio structure: it reads the local media bridge's 64-band system audio spectrum (WASAPI loopback on Windows), so bass drives amplitude, mids change the wavelength, highs set the wave speed, and a bass onset punches the whole column; several detuned sine waves are summed so the surface flows freely instead of looping. Sweeping the pointer across the ticks sends ripples outward from the touched tick and lets them decay, like a finger touching water. After playback stops, a bookmarked tick stays a little longer than its neighbours, carries a theme-color gradient and glow, and ends in a small dot. Pointing at a tick shows a bookmark button beside its preview card; press once to bookmark the turn, again to remove it. Everything is local: only the spectrum and playback state are read, and no audio is played, controlled, recorded or uploaded.",
+    "detail": "docs/DETAIL.md"
+  }
+}
