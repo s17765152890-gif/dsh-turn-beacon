@@ -1,5 +1,5 @@
 window.__ModuleLoader__.load({
-  id: '@local/turn-beacon',
+  id: 'dsh-turn-beacon',
   factory(require) {
     const React = require('react')
 
